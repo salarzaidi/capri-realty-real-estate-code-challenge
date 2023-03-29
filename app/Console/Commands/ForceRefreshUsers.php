@@ -27,6 +27,6 @@ class ForceRefreshUsers extends Command
      */
     public function handle(): void
     {
-        $this->refresh();
+        $this->refreshUserData();
     }
 }

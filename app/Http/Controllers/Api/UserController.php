@@ -13,8 +13,7 @@ class UserController extends Controller
 {
     use Users;
     public function index(){
-        $users = $this->getData();
+        $users = $this->refreshUserData();
         return response()->json($users->data,200);
-//        return (new UserCollection($users->data->row));
     }
 }

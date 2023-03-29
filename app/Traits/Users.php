@@ -8,14 +8,14 @@ trait Users {
 
     public function getData(){
         if (!Cache::has('users')){
-            $this->refresh();
+            $this->refreshUserData();
         }
         $data = Cache::get('users');
         return $data;
     }
 
-    public function refresh(){
-        $data = $this->getData();
+    public function refreshUserData(){
+        $data = $this->getLiveData();
         Cache::put('users',$data,now()->addHour(1));
         return $data;
     }

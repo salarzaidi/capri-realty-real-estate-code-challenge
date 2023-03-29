@@ -21,3 +21,17 @@ to/from required), create a new endpoint in Laravel that:
       7. Use traits and interfaces
 
 
+end result
+
+![img.png](img.png)
+
+point 1 to 7 are done in the repo
+
+- Sqlite db caching implement
+- User trail implement to handle data from remote to caching mechanism
+- Artisan Command implement to force-fully flush local db data and repopulate with new data from https://cspf-dev-challenge.herokuapp.com/
+- api implement to refresh data with alpine js call with loading event 
+- login and register implemented by breeze
+- laravel version 10, node version 16.16.0, alpinejs version 3.4.2
+
+Sir thanks for this opportunity, and wait for your response   
